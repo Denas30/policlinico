@@ -1,0 +1,119 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    
+    <div class="backgraund-fondo-profile">
+
+      <ion-buttons class="icono-lineas">
+        <ion-button (click)="backHome()" color="dark">
+          <ion-icon slot="icon-only" name="chevron-back-outline" mode="ios"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      <ion-buttons slot="end" class="icono-camara">
+        <ion-button (click)="changePhoto()" color="dark">
+          <ion-icon slot="icon-only" name="camera-outline" mode="ios"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+
+     <!-- centrado de texto y foto -->
+    <div class="center-text-photo-name">
+        <label class="text-perfil">Perfil</label>
+
+      <div class="tamano-image">
+        <img src="/assets/icon/img/myAvatar.png" alt="">
+      </div>
+
+      <p class="text-name-profile">Daniel Navarro</p>
+
+
+    </div>
+
+    <ion-segment
+        value="all" 
+        color="dark"
+        class="text-color-segment" 
+        scrollable="true"
+        mode="ios"
+        [(ngModel)]="segmentModel" 
+        (ionChange)="segmentChanged($event)"
+          >
+       
+        <ion-segment-button value="editar">
+          <ion-label>Editar Perfil</ion-label>
+        </ion-segment-button>
+  
+
+        <ion-segment-button value="password">
+          <ion-label>Contraseña</ion-label>
+        </ion-segment-button>
+     
+    </ion-segment>
+  </div>
+  
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+ 
+     <div *ngIf="segmentModel === 'editar'">
+
+      <form [formGroup]="perfilForm">
+        <ion-item lines="full" class="border-input">
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text" required formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item lines="full" class="border-input">
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input type="text" required formControlName="lastName"></ion-input>
+        </ion-item>
+        <ion-item lines="full" class="border-input">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="text" required formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item lines="full" class="border-input">
+          <ion-label position="floating">Celular</ion-label>
+          <ion-input type="number" required formControlName="phone"></ion-input>
+        </ion-item>
+    
+
+        <div class="center-button">
+     
+          <ion-button type="submit" [disabled]="perfilForm.invalid" color="primary" shape="round">Aceptar</ion-button>
+    
+       </div>
+   
+         
+      </form>
+    </div>
+  
+  <div *ngIf="segmentModel === 'password'">
+   
+
+      <form [formGroup]="changePassword">
+        <ion-item lines="full" class="border-input">
+          <ion-label position="floating">Contraseña actual</ion-label>
+          <ion-input type="text" required formControlName="passworActual"></ion-input>
+        </ion-item>
+        <ion-item lines="full" class="border-input">
+          <ion-label position="floating">Contraseña nueva</ion-label>
+          <ion-input type="text" required formControlName="newPassword"></ion-input>
+        </ion-item>
+        <ion-item lines="full" class="border-input">
+          <ion-label position="floating">Repetir contraseña nueva</ion-label>
+          <ion-input type="text" required formControlName="repeatPassword"></ion-input>
+        </ion-item>
+   
+        <div class="center-button">
+     
+          <ion-button type="submit" [disabled]="changePassword.invalid" color="primary" shape="round">Aceptar</ion-button>
+    
+       </div>
+   
+         
+      </form>
+   
+    </div>
+
+</ion-content>

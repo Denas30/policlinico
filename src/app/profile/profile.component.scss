@@ -1,0 +1,122 @@
+.blancoo{
+    color: #fff;
+    font-weight: bold;
+}
+
+.arrowBack {
+    font-size: 20px;
+}
+
+.img-tamano {
+    width: 100%;
+    z-index: -999;
+}
+
+
+.icono-lineas{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 7px;
+    top: 11px;
+  }
+
+  ion-content{
+    margin: 0;
+    padding: 0;
+
+    .tamano-card-content {
+        margin: 0;
+        padding: 0;
+        border-radius: 20px 20px 0px 0px;
+        position: absolute;
+        // bottom: 168px;
+    }
+  }
+
+  .conte-ava{
+    position: relative;
+    float: left;
+    .avat-user {
+         width: 50px;
+         height: 50px;
+    }
+  }
+
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 1px;
+    bottom: 2px;
+    z-index: 999;
+  }
+
+  .move-phone {
+    position: absolute;
+    left: 82%;
+    top: 2px;
+  }
+
+  .text-sobre-doctor {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    right: 9px;
+  }
+
+  .card-avatar-phone {
+    padding: 5px;
+  }
+
+  .border-date {
+    position: relative;
+    border:1px solid black;
+    border-radius: 5px;
+   
+    .number-date{
+    position: relative;
+    color: black;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    left: 27px;
+    top: 5px;
+    }
+
+}
+
+  .color-tamano-card-citas {
+    background-color: #E3F2FD;
+  }
+
+  .text-consulta {
+    position: relative;
+    color: black;
+    font-weight: 900;
+    line-height: 5px;
+    font-size: 15px;
+    left: 12px;
+  }
+
+  .week-day-weekend {
+    position: relative;
+    color: #616161;
+    font-weight: 600;
+    font-size: 12px;
+    left: 12px;
+  }

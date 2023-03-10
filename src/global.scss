@@ -1,0 +1,399 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+.card-container-icon{
+  height: 75px;
+  width: 80px;
+  position: absolute;
+  z-index: 99999;
+  right: 2px;
+  border-radius: 10px;
+  bottom: 45px;
+  background-color: #428cff;
+
+}
+
+.card-principal {
+    height: 110px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+
+    div.blueMedicina {
+        position: relative;
+        border: 1px solid #428cff;
+        border-radius: 10px;
+        line-height: 5px;
+      
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+
+    .yellowTrauma {
+        position: relative;
+        border: 1px solid #FFDE03;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+
+      .gastroColor {
+        position: relative;
+        border: 1px solid #EF5350;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+      .ginecoloColor {
+        position: relative;
+        border: 1px solid #FF80AB;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+      .urologoColor {
+        position: relative;
+        border: 1px solid #5C6BC0;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+      .nutricionColor {
+        position: relative;
+        border: 1px solid #8D6E63;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+      .peditriaColor {
+        position: relative;
+        border: 1px solid #F57F17;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+      .cardioColor {
+        position: relative;
+        border: 1px solid #4E342E;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+      .reumatoColor {
+        position: relative;
+        border: 1px solid #FF3D00;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+      .obstetraColor {
+        position: relative;
+        border: 1px solid #FF3D00;
+        border-radius: 10px;
+        line-height: 5px;
+        margin: 5px;
+        padding: 5px;
+         img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 5px;
+        }
+        .name-doctor{
+          position: relative;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          bottom: 5px;
+          // right: 8px;
+        }
+        .move-text{
+          position: absolute;
+          color: black;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          left: 70px;
+          bottom: 8px;
+          z-index: 999;
+        }
+      }
+
+      ion-segment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 60%;
+        // sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated{
+        //   color: #000;
+        //   font-weight: bold;
+        //   font-family: "Roboto", sans-serif;
+        // }
+        ion-label {
+          color: #000;
+          font-weight: bold;
+          font-family: "Roboto", sans-serif;
+        }
+      }

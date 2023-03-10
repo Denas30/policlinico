@@ -1,0 +1,45 @@
+
+
+<ion-content class="ion-padding">
+
+  <div class="center-text-photo-name">
+  <div class="tamano-image">
+    <h4>Logo</h4>
+    <!-- <img src="/assets/icon/img/logoLabora.pdf" alt=""> -->
+  </div>
+
+</div>
+
+  <form [formGroup]="loginForm">
+    <ion-grid>
+      <ion-row color="primary" class="ion-justify-content-center">
+
+
+        <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <div class="ion-padding mover-inputs">
+            <ion-item lines="full" class="input">
+              <ion-label position="floating">Correo</ion-label>
+              <ion-input name="email" type="email" formControlName="email" ></ion-input>
+            </ion-item>
+            <ion-item lines="full" class="input">
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input name="password" type="password" formControlName="password"></ion-input>
+            </ion-item>
+            <ion-text class="ion-float-end" color="medium" (click)="forgotPassword()">
+              <h6 class="ion-no-margin ion-text-end" class="small">¿Se te olvidó tu contraseña?</h6>
+            </ion-text>
+            <div class="ion-padding mover-button">
+              <ion-button mode="ios" size="large" type="submit" [disabled]="loginForm.invalid" expand="block">Login</ion-button>
+            </div>
+            <ion-text class="ion-float-end" color="medium" (click)="registrar()">
+              <h6 class="ion-no-margin ion-text-end" class="register-text">¿Create una cuenta con nosotros ya?</h6>
+            </ion-text>
+          </div>
+        </ion-col>
+     </ion-row>
+     <ion-col>
+    </ion-col>
+     
+    </ion-grid>
+  </form>
+</ion-content>

@@ -1,0 +1,67 @@
+
+
+
+.input {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #E0E0E0;
+    border-radius: 9px;
+    font-size: 0.9em !important;
+    margin: 8px;
+    padding: 0px;
+  }
+  
+//   ion-button{
+//     --background: #062f77;
+//   }
+  
+//   a{
+//     color: #fff;
+//   }
+  
+  .small {
+    font-family: "Roboto", sans-serif;
+    color: #3880ff;
+    font-weight: bold;
+    font-size: 14px;
+    a {
+      text-decoration: unset !important;
+    }
+  }
+
+  .center-text-photo-name {
+    // min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  .tamano-image {
+    border: 1px solid #000;
+    height: 85px;
+    width: 85px;
+    position: absolute;
+    top: 93px;
+    // border-radius: 50%;
+    img{
+        // border-radius: 50%;
+    }
+}
+  }
+
+  .mover-inputs {
+    top: 168px;
+    position: relative;
+  }
+
+  .mover-button {
+    position: relative;
+    top: 30px;
+  }
+
+  .register-text {
+    position: relative;
+    top: 72px;
+    font-family: "Roboto", sans-serif;
+    color: #3880ff;
+    font-size: 14px;
+    font-weight: bold;
+  }

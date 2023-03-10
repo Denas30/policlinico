@@ -1,0 +1,89 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-padding">
+
+   <ion-buttons class="icono-lineas">
+     <ion-button (click)="openFirst()" color="dark">
+      <ion-icon slot="icon-only" name="reorder-three-outline" mode="ios"></ion-icon>
+     </ion-button>
+   </ion-buttons>
+
+    <!-- <div class="icono-lineas">
+      <ion-icon name="reorder-three-outline" mode="ios" (click)="openFirst()"></ion-icon>
+    </div> -->
+
+    <div class="conte-ava">
+      <ion-avatar class="avat-user" (click)="paciente()">
+        <img  src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="container">
+
+  <div class="container">
+    <p class="text-parrafo">
+     Cartera de servicio
+    </p>
+
+     <!-- buscador de medicos -->
+    <!-- <div>
+      <ion-searchbar placeholder="Buscar Doctor" mode="ios"></ion-searchbar>
+    </div> -->
+
+
+    <div>
+      <ion-slides [options]="slideOpts" (click)="wallet()">
+        <ion-slide *ngFor="let sliderCate of sliderCard">
+
+          <ion-card class="card-container-icon" mode="md">
+            <img  [src]="sliderCate.icon" class="icono-card-slider">
+          </ion-card>
+  
+          <ion-card class="card-principal" mode="md">
+       
+            <ion-card-content>
+             <label class="text-contai-card">{{sliderCate.text}}</label>
+            </ion-card-content>
+
+          </ion-card>
+        </ion-slide>
+     
+      </ion-slides>
+     </div> 
+
+<!-- <img src="assets/icon/img/iconos/maternidad.png" alt=""> -->
+
+      <div class="text-doctores">
+        <p class="text-parrafoTwo">Top de Doctores Especializados</p>
+      </div>
+
+
+    
+
+       <div  *ngFor="let item of doctors" (click)="datesProfile()">
+         
+        <div [ngClass]="item.class">
+       
+           <ion-item lines="none">
+            <ion-avatar slot="start">
+              <img  src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+
+            <label class="name-doctor"> {{item.name}}</label>
+          </ion-item> 
+          
+          <div class="move-text">
+            <label> {{item.especialidad}} - &nbsp;{{item.centro}}</label>
+          </div> 
+        </div>
+
+      </div>
+
+   
+
+    
+
+  </div>
+</ion-content>

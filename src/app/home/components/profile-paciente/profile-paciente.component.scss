@@ -1,0 +1,163 @@
+
+.backgraund-fondo-profile {
+    background-color: #64B5F6;
+    height: 300px;
+}
+
+.center-text-photo-name {
+    // min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text-perfil {
+        color: black;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+    }
+
+    .tamano-image {
+        border: 1px solid #000;
+        height: 85px;
+        width: 85px;
+        position: absolute;
+        top: 93px;
+        border-radius: 50%;
+        img{
+            border-radius: 50%;
+        }
+    }
+
+    .text-name-profile {
+        color: black;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        position: absolute;
+        top: 64%;
+    }
+   
+    .move-segment {
+        position: absolute;
+        top: 150px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .text-color-segment {
+        color: #000;
+        font-weight: bold;
+    }
+
+}
+
+.icono-camara {
+    position: absolute;
+    left: 86%;
+    top: 6px;
+}
+
+ion-col {
+    // background-color: #135d54;
+    border: solid 1px #000000;
+    color: #000000;
+    text-align: center;
+  }
+
+  .card-sin-margin {
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-name-lastName {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    float: left;
+    font-size: 13px;
+  }
+  .text-name-firtName {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    right: 74px;
+    font-size: 13px;
+    bottom: 2px;
+  }
+
+  .text-proce-sector {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+  }
+
+  .text-genero {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  .text-name-seguro {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+
+  .text-phone {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    position: relative;
+    right: 106px;
+    bottom: 2px;
+  }
+
+  .text-correo {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    position: relative;
+    right: 58px;
+    bottom: 2px;
+  }
+
+  .text-doctores {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding: 4px;
+    margin: 0;
+    top: 12px;
+  }
+
+  .text-parrafoTwo {
+    color: black;
+    font-weight: bold;
+    position: relative;
+    left: 1px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .border-input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 55px;
+    margin: 7px;
+  }
+
+  .center-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+  }

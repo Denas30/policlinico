@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+   
+      <ion-buttons class="icono-lineas">
+        <ion-button (click)="backHome()" color="dark">
+          <ion-icon slot="icon-only" name="chevron-back-outline" mode="ios"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card mode="ios">
+
+
+    <ion-slides [options]="slideOpts" pager="true">
+      <ion-slide *ngFor="let item of imgSlider" >
+
+        <img [src]="item.img" class="tamano-img-slider">
+     
+      </ion-slide>
+   
+    </ion-slides>
+
+
+    <ion-card-header>
+      <ion-card-title class="title-text-medi">Medicina General</ion-card-title>
+      <ion-label class="title-text-small">Policlínico Próceres</ion-label>
+    </ion-card-header>
+  
+    <ion-card-content>
+     <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi amet, sunt autem maiores itaque sapiente exercitationem debitis animi ea. Tempora et quo modi aliquid vero ullam unde perspiciatis beatae!
+     </p>
+     <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi amet, sunt autem maiores itaque sapiente exercitationem debitis animi ea. Tempora et quo modi aliquid vero ullam unde perspiciatis beatae!
+     </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
