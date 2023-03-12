@@ -1,60 +1,8 @@
 <ion-app>
 
-  <ion-menu side="start" menuId="first" contentId="main-content">
-    <ion-header class="ion-no-border">
-      <ion-toolbar>
-        <ion-title class="title-text-menu">Policlínico Próceres</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content class="ion-padding">
-
-    <ion-list>
-
-     <ion-menu-toggle>
-
-       <ion-item  (click)="paciente()" class="text-menu-list">
-        <ion-icon slot="start" name="create-outline"></ion-icon>
-       Perfil
-      </ion-item>
-
-      <ion-item  (click)="addDoctor()" class="text-menu-list">
-        <ion-icon slot="start" name="add-outline"></ion-icon>
-        Agregar Doctor
-      </ion-item>
-
-       <ion-item  class="text-menu-list" (click)="aboutUs()">
-        <ion-icon slot="start" name="pulse-outline"></ion-icon>
-        Quienes somos</ion-item>
-
-
-       <ion-item  class="text-menu-list"(click)="history()">
-        <ion-icon slot="start" name="reader-outline"></ion-icon>
-        Historia Clinica
-      </ion-item>
-
-       <ion-item  class="text-menu-list" (click)="shareApp()">
-        <ion-icon slot="start" name="arrow-redo-outline"></ion-icon>
-        Compartir app
-      </ion-item>
-
-       <ion-item  class="text-menu-list">
-        <ion-icon slot="start" name="log-out-outline"></ion-icon>
-        Cerrar sesion</ion-item>
-
-     </ion-menu-toggle>
-
-    </ion-list>
-
-    <!-- <div class="icono-move">
-     <p class="text-redes">Visita nustras redes sociales</p>
-      <ion-icon slot="icon-only" name="logo-instagram" class="tamano-icono"></ion-icon>
-      <ion-icon slot="icon-only" name="logo-facebook" class="tamano-icono"></ion-icon>
-    </div> -->
-
-    </ion-content>
-  </ion-menu>
 
 
 
-  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+  <ion-router-outlet></ion-router-outlet>
 </ion-app>
