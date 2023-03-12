@@ -7,31 +7,31 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding">
-   
+
     <ion-list>
- 
+
      <ion-menu-toggle>
 
        <ion-item  (click)="paciente()" class="text-menu-list">
         <ion-icon slot="start" name="create-outline"></ion-icon>
        Perfil
       </ion-item>
-       
+
       <ion-item  (click)="addDoctor()" class="text-menu-list">
         <ion-icon slot="start" name="add-outline"></ion-icon>
         Agregar Doctor
       </ion-item>
-      
+
        <ion-item  class="text-menu-list" (click)="aboutUs()">
         <ion-icon slot="start" name="pulse-outline"></ion-icon>
         Quienes somos</ion-item>
-    
-        
+
+
        <ion-item  class="text-menu-list"(click)="history()">
         <ion-icon slot="start" name="reader-outline"></ion-icon>
         Historia Clinica
       </ion-item>
-   
+
        <ion-item  class="text-menu-list" (click)="shareApp()">
         <ion-icon slot="start" name="arrow-redo-outline"></ion-icon>
         Compartir app
@@ -54,7 +54,7 @@
     </ion-content>
   </ion-menu>
 
- 
+
 
   <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

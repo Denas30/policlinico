@@ -10,7 +10,7 @@ import { MenuController } from '@ionic/angular';
 })
 export class HomePage implements OnInit  {
 
- 
+
  private icon = "assets/icon/img/iconos/";
  public idCarteraGenera: any;
 
@@ -71,7 +71,7 @@ export class HomePage implements OnInit  {
       icon: `${this.icon}` + "heart.png",
       id: 9
     },
-  
+
     {
       text: "Nutrición",
       icon: `${this.icon}` + "plan.png",
@@ -97,7 +97,7 @@ export class HomePage implements OnInit  {
       icon: `${this.icon}` + "ultrasonido.png",
       id: 14
     },
- 
+
   ]
 
   doctors = [
@@ -180,10 +180,10 @@ export class HomePage implements OnInit  {
         this.idCarteraGenera =  params.get('id');
       });
     }
- 
+
 
   datesProfile(){
-  const r = this.route.navigate(['./profile']);
+  const r = this.route.navigate(['intranet/profile']);
   }
 
   openFirst() {
@@ -192,10 +192,10 @@ export class HomePage implements OnInit  {
   }
 
   paciente() {
-    this.route.navigate(['paciente']);
+    this.route.navigate(['intranet/paciente']);
   }
 
   wallet() {
-    this.route.navigate(['wallet'])
+    this.route.navigate(['intranet/wallet']);
   }
 }

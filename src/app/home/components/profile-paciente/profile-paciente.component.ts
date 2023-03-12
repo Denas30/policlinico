@@ -17,7 +17,7 @@ export class ProfilePacienteComponent implements OnInit {
 
   constructor(private router: Router,
               private formBuilder: FormBuilder,
-             ) { 
+             ) {
 
 
                 this.perfilForm = this.formBuilder.group({
@@ -32,15 +32,15 @@ export class ProfilePacienteComponent implements OnInit {
                   newPassword: [, Validators.required, Validators.minLength(10)],
                   repeatPassword: [, Validators.required, Validators.minLength(10)]
                 })
-               
+
               }
 
   ngOnInit() {
-    
+
   }
 
   backHome() {
-   this.router.navigate(['home']);
+   this.router.navigate(['intranet/home']);
   }
 
   segmentChanged(event: any) {
@@ -53,5 +53,5 @@ export class ProfilePacienteComponent implements OnInit {
 
   }
 
-  
+
 }

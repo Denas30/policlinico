@@ -1,5 +1,4 @@
 
-
 <ion-content class="ion-padding">
 
   <div class="center-text-photo-name">
@@ -29,7 +28,7 @@
               <h6 class="ion-no-margin ion-text-end" class="small">¿Se te olvidó tu contraseña?</h6>
             </ion-text>
             <div class="ion-padding mover-button">
-              <ion-button mode="ios" size="large" type="submit" [disabled]="loginForm.invalid" expand="block">Login</ion-button>
+              <ion-button mode="ios" size="large" type="submit" (click)="login()" [disabled]="!loginForm.invalid" expand="block">Login</ion-button>
             </div>
             <ion-text class="ion-float-end" color="medium" (click)="registrar()">
               <h6 class="ion-no-margin ion-text-end" class="register-text">¿Create una cuenta con nosotros ya?</h6>
@@ -39,7 +38,7 @@
      </ion-row>
      <ion-col>
     </ion-col>
-     
+
     </ion-grid>
   </form>
 </ion-content>

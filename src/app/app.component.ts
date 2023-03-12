@@ -15,26 +15,26 @@ export class AppComponent {
   }
 
   address() {
-  this.router.navigate(['address']);
+  this.router.navigate(['intranet/address']);
   }
 
   paciente() {
-    this.router.navigate(['paciente']);
+    this.router.navigate(['intranet/paciente']);
   }
 
   history() {
-    this.router.navigate(['history']);
+    this.router.navigate(['intranet/history']);
   }
 
 
   shareApp() {
     console.log('compartir');
-    
+
   }
 
   addDoctor() {
     console.log('add doctor');
-    
+
   }
 
 }

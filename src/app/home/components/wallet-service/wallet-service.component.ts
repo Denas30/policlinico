@@ -8,7 +8,7 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 })
 export class WalletServiceComponent implements OnInit {
 
- 
+
 
   slideOpts = {
     speed: 400,
@@ -37,11 +37,11 @@ export class WalletServiceComponent implements OnInit {
   ngOnInit() {
     this.activeRoute.paramMap.subscribe((params: ParamMap ) =>{
       console.log('llego la url', params.get('id'));
-      
+
     })
   }
 
   backHome() {
-  this.router.navigate(['home']);
+  this.router.navigate(['intranet/home']);
   }
 }
