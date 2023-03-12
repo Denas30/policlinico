@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,35 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntranetPage implements OnInit {
 
-  constructor(private router: Router) {}
+  constructor() { }
 
   ngOnInit() {
   }
 
-  aboutUs(){
-  this.router.navigate(['about-us']);
-  }
-
-  address() {
-  this.router.navigate(['intranet/address']);
-  }
-
-  paciente() {
-    this.router.navigate(['intranet/paciente']);
-  }
-
-  history() {
-    this.router.navigate(['intranet/history']);
-  }
-
-
-  shareApp() {
-    console.log('compartir');
-
-  }
-
-  addDoctor() {
-    console.log('add doctor');
-
-  }
 }

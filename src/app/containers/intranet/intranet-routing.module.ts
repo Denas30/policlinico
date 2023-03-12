@@ -6,6 +6,11 @@ import { IntranetPage } from './intranet.page';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     component: IntranetPage,
     children: [
       {
