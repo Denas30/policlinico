@@ -3,50 +3,22 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'auth',
+    loadChildren: () => import('./containers/auth/auth.module').then( m => m.AuthPageModule)
   },
-
   {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfileModule)
+    path: 'intranet',
+    loadChildren: () => import('./containers/intranet/intranet.module').then( m => m.IntranetPageModule)
   },
-
   {
     path: 'about-us',
     loadChildren: () => import('./home/components/about-us/about-us.module').then( m => m.AboutUsModule)
   },
   {
-    path: 'address',
-    loadChildren: () => import('./home/components/address/address.module').then( m => m.AddressModule)
-  },
-  {
-    path: 'paciente',
-    loadChildren: () => import('./home/components/profile-paciente/profile-paciente.module').then( m => m.ProfilePacienteModule)
-  },
-  {
-    path: 'history',
-    loadChildren: () => import('./home/components/history/history.module').then( m => m.HistoryModule)
-  },
-
-  {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginModule)
-  },
-  {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then( m => m.RegisterModule)
-  },
-  {
-    path: 'wallet',
-    loadChildren: () => import('./home/components/wallet-service/wallet-service.module').then( m => m.WalletServiceModule)
-  },
-
-  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'auth',
     pathMatch: 'full'
-  },
+  }
 ];
 
 @NgModule({

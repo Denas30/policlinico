@@ -48,17 +48,17 @@ export class ProfileComponent implements OnInit {
   ]
 
   constructor(private router: Router,
-             ) { 
-               
+             ) {
+
               }
 
   ngOnInit() {
- 
+
   }
 
 
   backHome() {
-   this.router.navigate(['home']);
+   this.router.navigate(['intranet/home']);
   }
 
 }

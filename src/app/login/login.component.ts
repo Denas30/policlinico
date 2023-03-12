@@ -13,22 +13,25 @@ export class LoginComponent implements OnInit {
 
   constructor( private formBuilder: FormBuilder,
                private router: Router) {
-   
+
     this.loginForm = this.formBuilder.group({
       email: [ , [Validators.required, Validators.email] ],
       password: [, [Validators.required, Validators.minLength(10)] ],
     });
+    console.log('loginForm');
 
    }
 
   ngOnInit() {}
 
   cerrar() {}
-  login() {}
+  login() {
+    this.router.navigate(['intranet/home']);
+  }
 
   forgotPassword() {}
 
   registrar() {
-   this.router.navigate(['register']);
+   this.router.navigate(['auth/register']);
   }
 }

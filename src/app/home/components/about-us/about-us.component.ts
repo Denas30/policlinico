@@ -13,7 +13,7 @@ export class AboutUsComponent implements OnInit {
   ngOnInit() {}
 
   backHome() {
-  this.router.navigate(['/home']);
+  this.router.navigate(['/intranet/home']);
   }
 
 }

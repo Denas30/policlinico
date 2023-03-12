@@ -15,9 +15,9 @@ export class HistoryComponent implements OnInit {
   ngOnInit() {}
 
   backHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(['intranet/home']);
    }
- 
+
    segmentChanged(event: any) {
      console.log(this.segmentModel);
      console.log(event);

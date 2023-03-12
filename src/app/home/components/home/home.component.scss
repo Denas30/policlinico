@@ -1,0 +1,442 @@
+
+div.blueMedicina {
+  position: relative;
+  border: 1px solid #428cff;
+  border-radius: 10px;
+  line-height: 5px;
+
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+
+.yellowTrauma {
+  position: relative;
+  border: 1px solid #FFDE03;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+
+.gastroColor {
+  position: relative;
+  border: 1px solid #EF5350;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+.ginecoloColor {
+  position: relative;
+  border: 1px solid #FF80AB;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+.urologoColor {
+  position: relative;
+  border: 1px solid #5C6BC0;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+.nutricionColor {
+  position: relative;
+  border: 1px solid #8D6E63;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+.peditriaColor {
+  position: relative;
+  border: 1px solid #F57F17;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+.cardioColor {
+  position: relative;
+  border: 1px solid #4E342E;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+.reumatoColor {
+  position: relative;
+  border: 1px solid #FF3D00;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+.obstetraColor {
+  position: relative;
+  border: 1px solid #FF3D00;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
+
+
+.text-titl {
+  color: black;
+}
+
+.icono-lineas{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  left: 0px;
+}
+
+.conte-ava{
+  position: relative;
+  float: right;
+  .avat-user {
+       width: 50px;
+       height: 50px;
+  }
+}
+
+.text-parrafo {
+  position: relative;
+  color: black;
+  left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.icono-card-slider{
+  font-size: 60px;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  left: 3px;
+  color: #fff;
+}
+
+.text-contai-card {
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: 59px;
+  font-size: 12px;
+}
+
+.text-parrafoTwo {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  left: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-title-doct {
+  color: black;
+  font-weight: bold;
+  left: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-doctores {
+  position: relative;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  padding: 4px;
+  margin: 0;
+  top: 12px;
+}
+
+.move-avart-text {
+  position: relative;
+  border: 1px solid;
+  border-radius: 10px;
+  line-height: 5px;
+  margin: 5px;
+  padding: 5px;
+   img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+  }
+  .name-doctor{
+    position: relative;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 5px;
+    // right: 8px;
+  }
+  .move-text{
+    position: absolute;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 70px;
+    bottom: 8px;
+    z-index: 999;
+  }
+}
