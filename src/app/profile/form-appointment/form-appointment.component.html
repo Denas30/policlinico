@@ -1,0 +1,141 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons class="icono-lineas">
+      <ion-button (click)="backHome()" color="dark">
+        <ion-icon
+          slot="icon-only"
+          name="chevron-back-outline"
+          mode="ios"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="center-text-pricipal">
+    <ion-label class="text-cita">Agendar cita</ion-label>
+  </div>
+  
+  <form [formGroup]="formSchedule">
+ 
+  
+<div class="move-form">
+
+
+
+    <div class="flex-container">
+      
+      <ion-item lines="full" class="input">
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input name="firstName" type="text" formControlName="firstName"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full" class="input">
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input name="lastName" type="text" formControlName="lastName"></ion-input>
+      </ion-item>
+
+
+    </div>
+
+    <div class="flex-container">
+
+      <ion-item lines="full" class="input">
+        <ion-label position="floating">DNI</ion-label>
+        <ion-input name="dni" type="number" formControlName="dni"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full" class="input">
+        <ion-label position="floating">Edad</ion-label>
+        <ion-input name="yearOld" type="number" formControlName="yearOld"></ion-input>
+      </ion-item>
+
+
+    </div>
+
+    
+      <ion-item lines="full" class="input">
+         <ion-label position="floating">Distrito</ion-label>
+         <ion-input name="address" type="text" formControlName="address"></ion-input>
+       </ion-item>
+
+  
+
+        <div class="flex-select">
+            <ion-item lines="full" class="input">
+              <ion-select placeholder="Genero" formControlName="gender">
+                <ion-select-option value="m">Masculino</ion-select-option>
+                <ion-select-option value="f">Femenino</ion-select-option>
+                <ion-select-option value="o">Otro</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item lines="full" class="input">
+              <ion-select placeholder="Horario" formControlName="hours">
+                <ion-select-option value="m">9:30  am</ion-select-option>
+                <ion-select-option value="f">10:10 am</ion-select-option>
+                <ion-select-option value="o">10:40 am</ion-select-option>
+                <ion-select-option value="f">10:10 am</ion-select-option>
+                <ion-select-option value="o">11:00 am</ion-select-option>
+                <ion-select-option value="f">11:30 am</ion-select-option>
+                <ion-select-option value="o">12:20 pm</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+
+            <ion-item lines="full" class="input">
+              <ion-select placeholder="Tipo de seguro" formControlName="sure">
+                <ion-select-option value="p">privada</ion-select-option>
+                <ion-select-option value="s">SIS</ion-select-option>
+                <ion-select-option value="e">Essalud</ion-select-option>
+                <ion-select-option value="o">Otro</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+          </div>
+
+
+           <div class="flex-container">
+
+             <ion-item lines="full" class="input">
+               <ion-label position="floating">Correo</ion-label>
+               <ion-input name="email" type="email" formControlName="email" ></ion-input>
+             </ion-item>
+   
+             <ion-item lines="full" class="input">
+               <ion-label position="floating">Celular</ion-label>
+               <ion-input name="phone"  type="number" formControlName="phone"></ion-input>
+             </ion-item>
+
+           </div>
+          
+        
+
+
+
+</div>
+
+           
+    <div class="ion-padding mover-button">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button mode="ios" size="large" fill="outline" (click)="cancelarForm()">Cancelar</ion-button>
+
+          </ion-col>
+          <ion-col>
+
+            <ion-button mode="ios" size="large" type="submit" [disabled]="formSchedule.invalid">Registrar</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+           
+       
+     
+    
+  </form>
+
+</ion-content>

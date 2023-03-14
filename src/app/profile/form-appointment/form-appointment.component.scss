@@ -1,0 +1,54 @@
+
+.flex-container {
+    display: flex;
+   
+  }
+  
+  .flex-container > ion-item {
+    margin: 5px;
+   }
+
+  .flex-select {
+  display: flex;
+  }
+
+
+  .flex-select > ion-item {
+    margin: 5px;
+   }
+
+  .input {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #E0E0E0;
+    border-radius: 9px;
+    font-size: 0.9em !important;
+    margin: 8px;
+    padding: 0px;
+  }
+
+  .move-form {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+  }
+
+  .center-text-pricipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:50px;
+    .text-cita {
+      color: #000000;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      position: relative;
+    }
+  }
+  .mover-button{
+    position: relative;
+    top: 142px;
+    left: 20px;
+  }

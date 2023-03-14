@@ -36,7 +36,11 @@ const routes: Routes = [
       {
         path: 'wallet',
         loadChildren: () => import('../../home/components/wallet-service/wallet-service.module').then( m => m.WalletServiceModule)
-      }
+      },
+      {
+        path: 'form-appoin',
+        loadChildren: () => import('../../profile/form-appointment/form-appointment.module').then( m => m.FormAppoinmentModule)
+      },
     ]
   }
 ];

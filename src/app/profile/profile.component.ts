@@ -61,4 +61,8 @@ export class ProfileComponent implements OnInit {
    this.router.navigate(['intranet/home']);
   }
 
+  formAppoin() {
+    this.router.navigate(['intranet/form-appoin']);
+  }
+
 }

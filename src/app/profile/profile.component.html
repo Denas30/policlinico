@@ -31,7 +31,7 @@
           <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
         </ion-avatar>
 
-        <label class="name-doctor"> Dr.caro,&nbsp; Dr.Izquierdo</label>
+        <label class="name-doctor"> Dr.caro</label>
         <div class="move-text">
           <label> Medicina General - &nbsp;Policlínico Próceres</label>
         </div>
@@ -62,7 +62,7 @@
         Agendar cita
       </p>
 
-      <ion-card class="color-tamano-card-citas" *ngFor="let item of dates">
+      <ion-card class="color-tamano-card-citas" *ngFor="let item of dates" (click)="formAppoin()">
         <ion-grid>
           <ion-row>
             <ion-col size="3" size-sm="3">
