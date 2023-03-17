@@ -62,19 +62,19 @@
       <form [formGroup]="perfilForm">
         <ion-item lines="full" class="border-input">
           <ion-label position="floating">Nombre</ion-label>
-          <ion-input type="text" required formControlName="name"></ion-input>
+          <ion-input type="text" formControlName="name"></ion-input>
         </ion-item>
         <ion-item lines="full" class="border-input">
           <ion-label position="floating">Apellido</ion-label>
-          <ion-input type="text" required formControlName="lastName"></ion-input>
+          <ion-input type="text" formControlName="lastName"></ion-input>
         </ion-item>
         <ion-item lines="full" class="border-input">
           <ion-label position="floating">Email</ion-label>
-          <ion-input type="text" required formControlName="email"></ion-input>
+          <ion-input type="email" formControlName="email"></ion-input>
         </ion-item>
         <ion-item lines="full" class="border-input">
           <ion-label position="floating">Celular</ion-label>
-          <ion-input type="number" required formControlName="phone"></ion-input>
+          <ion-input type="number" formControlName="phone"></ion-input>
         </ion-item>
     
 
@@ -94,15 +94,15 @@
       <form [formGroup]="changePassword">
         <ion-item lines="full" class="border-input">
           <ion-label position="floating">Contraseña actual</ion-label>
-          <ion-input type="text" required formControlName="passworActual"></ion-input>
+          <ion-input type="password" formControlName="passworActual"></ion-input>
         </ion-item>
         <ion-item lines="full" class="border-input">
           <ion-label position="floating">Contraseña nueva</ion-label>
-          <ion-input type="text" required formControlName="newPassword"></ion-input>
+          <ion-input type="password" formControlName="newPassword"></ion-input>
         </ion-item>
         <ion-item lines="full" class="border-input">
           <ion-label position="floating">Repetir contraseña nueva</ion-label>
-          <ion-input type="text" required formControlName="repeatPassword"></ion-input>
+          <ion-input type="password" formControlName="repeatPassword"></ion-input>
         </ion-item>
    
         <div class="center-button">

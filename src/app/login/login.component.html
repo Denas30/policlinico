@@ -16,14 +16,23 @@
 
         <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
           <div class="ion-padding mover-inputs">
-            <ion-item lines="full" class="input">
+            <ion-item lines="full">
               <ion-label position="floating">Correo</ion-label>
+              <ion-icon slot="start" name="person-outline"></ion-icon>
               <ion-input name="email" type="email" formControlName="email" ></ion-input>
             </ion-item>
-            <ion-item lines="full" class="input">
+
+            <!-- password con icono de hide and show -->
+            <ion-item lines="full">
               <ion-label position="floating">Contraseña</ion-label>
-              <ion-input name="password" type="password" formControlName="password"></ion-input>
+              <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+                 <ion-input name="password" #passwordEyeLogin  [type]="passwordTypeInput" formControlName="password" clearOnEdit="false"></ion-input>
+              <button item-end class="btn_eye_icon" (click)="togglePasswordMode()">
+                <ion-icon [name]="(passwordTypeInput === 'text') ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+              </button>
+           
             </ion-item>
+
             <ion-text class="ion-float-end" color="medium" (click)="forgotPassword()">
               <h6 class="ion-no-margin ion-text-end" class="small">¿Se te olvidó tu contraseña?</h6>
             </ion-text>

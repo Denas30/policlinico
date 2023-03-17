@@ -28,10 +28,10 @@ export class ProfilePacienteComponent implements OnInit {
                 });
 
                 this.changePassword = this.formBuilder.group({
-                  passworActual: [, [Validators.required, Validators.minLength(10)]],
-                  newPassword: [, Validators.required, Validators.minLength(10)],
-                  repeatPassword: [, Validators.required, Validators.minLength(10)]
-                })
+                  passworActual: [, [Validators.required, Validators.maxLength(10)]],
+                  newPassword: [, Validators.required, Validators.maxLength(10)],
+                  repeatPassword: [, Validators.required, Validators.maxLength(10)]
+                });
 
               }
 

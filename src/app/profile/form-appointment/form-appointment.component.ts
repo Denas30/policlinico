@@ -15,13 +15,15 @@ export class FormAppointmentComponent implements OnInit {
               private formBuilder : FormBuilder) { 
 
           this.formSchedule = this.formBuilder.group({
-            firstName: [, [Validators.required, Validators.minLength(20)] ],
-            lastName: [ , [Validators.required, Validators.maxLength(20)] ],
-            dni: [ , [Validators.required, Validators.maxLength(10)] ],
+            firstName: [, [Validators.required, Validators.maxLength(10)] ],
+            lastName: [ , [Validators.required, Validators.maxLength(10)] ],
+            numberDoc: [ , [Validators.required, Validators.maxLength(10)] ],
             yearOld: [ , [Validators.required, Validators.maxLength(2)] ],
-            address: [, [Validators.required, Validators.minLength(30)] ],
+            address: [, [Validators.required, Validators.maxLength(30)] ],
             gender : [, [Validators.required, Validators.required]],
             hours : [, [Validators.required, Validators.required]],
+            district : [, [Validators.required, Validators.required]],
+            document : [, [Validators.required, Validators.required]],
             sure : [, [Validators.required, Validators.required]],
             email: [ , [Validators.required, Validators.email] ],
             phone: [ , [ Validators.required, Validators.maxLength(9) ]]

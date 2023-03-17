@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -8,21 +8,32 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  @ViewChild('passwordEyeLogin', { read: ElementRef }) passwordEye!: ElementRef;
 
- loginForm: FormGroup;
+  passwordTypeInput = 'password';
 
-  constructor( private formBuilder: FormBuilder,
-               private router: Router) {
+  loginForm: FormGroup;
 
+  constructor(private formBuilder: FormBuilder, private router: Router) {
     this.loginForm = this.formBuilder.group({
-      email: [ , [Validators.required, Validators.email] ],
-      password: [, [Validators.required, Validators.minLength(10)] ],
+      email: [, [Validators.required, Validators.email]],
+      password: [, [Validators.required, Validators.minLength(10)]],
     });
     console.log('loginForm');
-
-   }
+  }
 
   ngOnInit() {}
+
+  togglePasswordMode() {
+    this.passwordTypeInput =
+      this.passwordTypeInput === 'text' ? 'password' : 'text';
+    const nativeEl = this.passwordEye.nativeElement.querySelector('input');
+    const inputSelection = nativeEl.selectionStart;
+    nativeEl.focus();
+    setTimeout(() => {
+      nativeEl.setSelectionRange(inputSelection, inputSelection);
+    }, 1);
+  }
 
   cerrar() {}
   login() {
@@ -32,6 +43,6 @@ export class LoginComponent implements OnInit {
   forgotPassword() {}
 
   registrar() {
-   this.router.navigate(['auth/register']);
+    this.router.navigate(['auth/register']);
   }
 }

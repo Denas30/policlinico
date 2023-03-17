@@ -22,8 +22,7 @@
     border: 1px solid #E0E0E0;
     border-radius: 9px;
     font-size: 0.9em !important;
-    margin: 8px;
-    padding: 0px;
+    height: 52px;
   }
 
   .move-form {
@@ -48,7 +47,24 @@
     }
   }
   .mover-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    top: 142px;
-    left: 20px;
-  }
+    top: 125px;
+    }
+
+    .flex-document-number {
+      display: flex;
+      .flex-document-number > ion-item {
+        margin: 8px;
+        padding: 0px;
+      }
+    }
+
+    .inputNumber {
+      font-size: 0.9em !important;
+      position: absolute;
+      bottom: 5px;
+    }
+    

@@ -24,56 +24,117 @@
 <div class="move-form">
 
 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6"  size-lg="6">
 
-    <div class="flex-container">
+        <ion-item lines="full">
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input name="firstName" type="text" formControlName="firstName"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="6" size-lg ="6">
+
+        <ion-item lines="full">
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input name="lastName" type="text" formControlName="lastName"></ion-input>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+   
       
-      <ion-item lines="full" class="input">
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input name="firstName" type="text" formControlName="firstName"></ion-input>
-      </ion-item>
-
-      <ion-item lines="full" class="input">
-        <ion-label position="floating">Apellido</ion-label>
-        <ion-input name="lastName" type="text" formControlName="lastName"></ion-input>
-      </ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" size-lg ="6">
 
 
-    </div>
+            <ion-item lines="full" >
+              <ion-label position="floating">Documento</ion-label>
+              <ion-select formControlName="document">
+                <ion-select-option value="d">DNI</ion-select-option>
+                <ion-select-option value="c">Carnet Extranjeria</ion-select-option>
+                <ion-select-option value="p">Pasaporte</ion-select-option>
+               </ion-select>
+            </ion-item>
 
-    <div class="flex-container">
+          </ion-col>
+          <ion-col size="6" size-lg ="6">
 
-      <ion-item lines="full" class="input">
-        <ion-label position="floating">DNI</ion-label>
-        <ion-input name="dni" type="number" formControlName="dni"></ion-input>
-      </ion-item>
 
-      <ion-item lines="full" class="input">
+            <ion-item lines="full" class="inputNumber">
+              <ion-label position="floating">Número de documento</ion-label>
+              <ion-input name="dni" type="number" formControlName="numberDoc"></ion-input>
+            </ion-item>
+
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" size-lg ="6">
+
+            <ion-item lines="full">
+              <ion-label position="floating">Distrito</ion-label>
+              <ion-select formControlName="district">
+                <ion-select-option value="s">San Juan de Lurigancho</ion-select-option>
+                <ion-select-option value="l">Lince</ion-select-option>
+                <ion-select-option value="b">San Borja</ion-select-option>
+                <ion-select-option value="a">El Agustino</ion-select-option>
+                <ion-select-option value="v">Villa el salvador</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+          </ion-col>
+      <ion-col size="6" size-lg ="6">
+
+      <ion-item lines="full" class="inputNumber">
         <ion-label position="floating">Edad</ion-label>
         <ion-input name="yearOld" type="number" formControlName="yearOld"></ion-input>
-      </ion-item>
+      </ion-item> 
+
+       </ion-col>
+        </ion-row>
+      </ion-grid>
 
 
-    </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-lg ="6">
+            <ion-item lines="full">
+              <ion-label position="floating">Dirección</ion-label>
+              <ion-textarea  [autoGrow]="true" value="" formControlName="address"></ion-textarea>
+            </ion-item>
 
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     
-      <ion-item lines="full" class="input">
-         <ion-label position="floating">Distrito</ion-label>
-         <ion-input name="address" type="text" formControlName="address"></ion-input>
-       </ion-item>
 
-  
 
-        <div class="flex-select">
-            <ion-item lines="full" class="input">
-              <ion-select placeholder="Genero" formControlName="gender">
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" size-sm="3" >
+            <ion-item lines="full">
+              <ion-label position="floating">Genero</ion-label>
+              <ion-select formControlName="gender">
                 <ion-select-option value="m">Masculino</ion-select-option>
                 <ion-select-option value="f">Femenino</ion-select-option>
                 <ion-select-option value="o">Otro</ion-select-option>
               </ion-select>
             </ion-item>
 
-            <ion-item lines="full" class="input">
-              <ion-select placeholder="Horario" formControlName="hours">
+          </ion-col>
+          <ion-col size="4" size-sm="3">
+
+            <ion-item lines="full">
+              <ion-label position="floating">Horario</ion-label>
+              <ion-select formControlName="hours">
                 <ion-select-option value="m">9:30  am</ion-select-option>
                 <ion-select-option value="f">10:10 am</ion-select-option>
                 <ion-select-option value="o">10:40 am</ion-select-option>
@@ -84,42 +145,50 @@
               </ion-select>
             </ion-item>
 
-
-            <ion-item lines="full" class="input">
-              <ion-select placeholder="Tipo de seguro" formControlName="sure">
+          </ion-col>
+          <ion-col size="4" size-sm="3">
+            <ion-item lines="full">
+              <ion-label position="floating">Seguro</ion-label>
+              <ion-select formControlName="sure">
                 <ion-select-option value="p">privada</ion-select-option>
                 <ion-select-option value="s">SIS</ion-select-option>
                 <ion-select-option value="e">Essalud</ion-select-option>
+                <ion-select-option value="t">Soat</ion-select-option>
                 <ion-select-option value="o">Otro</ion-select-option>
               </ion-select>
             </ion-item>
 
-          </div>
-
-
-           <div class="flex-container">
-
-             <ion-item lines="full" class="input">
-               <ion-label position="floating">Correo</ion-label>
-               <ion-input name="email" type="email" formControlName="email" ></ion-input>
-             </ion-item>
-   
-             <ion-item lines="full" class="input">
-               <ion-label position="floating">Celular</ion-label>
-               <ion-input name="phone"  type="number" formControlName="phone"></ion-input>
-             </ion-item>
-
-           </div>
-          
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
         
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-item lines="full">
+              <ion-label position="floating">Correo</ion-label>
+              <ion-input name="email" type="email" formControlName="email" ></ion-input>
+            </ion-item>
 
+          </ion-col>
+          <ion-col size="6">
+            <ion-item lines="full">
+              <ion-label position="floating">Celular</ion-label>
+              <ion-input name="phone"  type="number" formControlName="phone"></ion-input>
+            </ion-item>
 
+          </ion-col>
+        </ion-row>
+      </ion-grid>      
 
+   
 </div>
 
            
     <div class="ion-padding mover-button">
-      <ion-grid>
+      <ion-button mode="ios" expand="block" type="submit" [disabled]="formSchedule.invalid">Registrar cita</ion-button>
+      <!-- <ion-grid>
         <ion-row>
           <ion-col>
             <ion-button mode="ios" size="large" fill="outline" (click)="cancelarForm()">Cancelar</ion-button>
@@ -127,15 +196,11 @@
           </ion-col>
           <ion-col>
 
-            <ion-button mode="ios" size="large" type="submit" [disabled]="formSchedule.invalid">Registrar</ion-button>
           </ion-col>
         </ion-row>
-      </ion-grid>
+      </ion-grid> -->
     </div>
-           
-       
-     
-    
+            
   </form>
 
 </ion-content>
